@@ -1,7 +1,6 @@
 import java.util.Random;
 import java.util.Scanner;
 
-
 public class FindTheCoin {
 
     static String[] board = new String[64];
@@ -86,12 +85,14 @@ public class FindTheCoin {
 
 
     static void displayBoard(){
-        System.out.println("_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ ");
+        System.out.println("-------------------------------------------------------------------------");
+        //System.out.println("_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ ");
         for(int i = 0; i < 64; i+=8){
             System.out.println("|        |        |        |        |        |        |        |        |");
             System.out.println("|   " + board[i] + "   |   " + board[i+1] + "   |   " + board[i + 2] + "   |   " + board[i+3] + "   |   " + board[i+4] + "   |   " + board[i+5] + "   |   " + board[i + 6]  + "   |   " + board[i + 7] + "   |");
             System.out.println("|        |        |        |        |        |        |        |        |");
-            System.out.println("_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _");
+            //System.out.println("_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _");
+            System.out.println("-------------------------------------------------------------------------");
         }
 
     }
