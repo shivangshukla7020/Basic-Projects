@@ -1,0 +1,19 @@
+git config --global/local user.name/email "name/email"   (Use to set username and user-email)
+git config --list                                        (Use to show the user details)
+
+git clone <link>                                           (download the copy of repository)
+git status                                               (check the status of files [untracked/tracked/modified/staged])
+
+git add filename/ .                                      (to add the files or changes and get it tracked)
+git commit -m "message"                                  (commit the changes and add the message with it)
+git push origin main                                     (upload all the changes created to main branch or origin repository)
+
+git init                                                 (intialize a github repository)
+git remote add origin <Link>                             (add new origin link to the folder i:e set push and pull repository)
+git remote -v                                            (check the push and pull links added)
+
+git branch                                               (to check branch (it shows master for main initially))
+git branch -m main                                       (changes branch name from master to main)
+
+git commit -am "message"                                 (only if we chang a single file then we can add+commit together)
+git -u origin main                                       (when -u used next time we can just write git push for that branch)
