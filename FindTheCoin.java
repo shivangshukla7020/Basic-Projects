@@ -78,6 +78,8 @@ public class FindTheCoin {
                 }
                 System.out.println("------>  GAME OVER  <-------- ");
             }
+
+            sc.close();
         }
 
     }
@@ -139,11 +141,14 @@ public class FindTheCoin {
     }
 
     static int checkBoard(int num){
-        if(board[num-1].equals("$$") || board[num-1].equals("!!")) return -1;
+        if(num > 64 || board[num-1].equals("$$") || board[num-1].equals("!!")) return -1;
         else{
             for (int i = 0; i < 8; i++) {
-                coinsRemain--;
-                if (num == coin[i]) return 0;
+                
+                if (num == coin[i]){
+                    coinsRemain--;
+                    return 0;
+                } 
             }
         }
     return 1;
@@ -160,6 +165,7 @@ public class FindTheCoin {
         System.out.print("\033[H\033[2J");
         System.out.flush();
         return p;
+        
     }
 
     static boolean checkWin(int[] players){
